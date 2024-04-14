@@ -1,13 +1,15 @@
 import * as vscode from "vscode";
-import { StateManager } from "./stateManager";
-import { retreiveTimeFromGlobalState } from "../utils";
+import { StateManager } from "../state/stateManager";
+import { retreiveTimeFromGlobalState } from "../state";
 
 export function handleTimeSpent(
   state: StateManager,
   statusBarItem: vscode.StatusBarItem
 ) {
-  setInterval(() => {
+  const interval = setInterval(() => {
     retreiveTimeFromGlobalState(state).then((timeSpent) => {
+      timeSpent += 1000; // increment timeSpent before writing it to the state
+
       const date = new Date(timeSpent);
       const hours = String(date.getHours() - 1).padStart(2, "0");
       const minutes = String(date.getMinutes()).padStart(2, "0");
@@ -15,8 +17,9 @@ export function handleTimeSpent(
 
       state.write(timeSpent).then(() => {
         statusBarItem.text = `${hours}:${minutes}:${seconds}`;
-        timeSpent += 1000;
       });
     });
   }, 1000);
+
+  return interval;
 }

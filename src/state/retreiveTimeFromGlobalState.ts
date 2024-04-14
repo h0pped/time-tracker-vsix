@@ -1,4 +1,4 @@
-import { StateManager } from "../handlers";
+import { StateManager } from "./stateManager";
 
 export const retreiveTimeFromGlobalState = async (
   state: StateManager

@@ -1,2 +1,2 @@
-export * from "./stateManager";
 export * from "./handleTimeSpent";
+export * from "./handleTimer";
