@@ -18,9 +18,13 @@ TBA
 
 ## Known Issues
 
-Timer goes faster when multiple vscode windows are open
+-
 
 ## Release Notes
+
+### 0.0.2
+
+Fixed an issue when multiple open windows caused timer speed-up
 
 ### 0.0.1
 

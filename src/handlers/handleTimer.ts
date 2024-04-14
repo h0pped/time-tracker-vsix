@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { handleTimeSpent } from "./handleTimeSpent";
-import { stopTimeSpent } from "./stopTimeSpent";
 import { StateManager } from "../state/stateManager";
+import { stopTimeSpent } from "./stopTimeSpent";
 
 export const handleTimer = (
   state: StateManager,
