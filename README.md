@@ -4,7 +4,7 @@ Track your time spent in a Vscode! Works globally across all projects and window
 
 ## Features
 
-\!\[Shows time in hh:mm:ss format at the right bottom of the window \]\(images/statusBar.png\)
+Shows time in hh:mm:ss format at the right bottom of the window
 
 ## Requirements
 
