@@ -6,6 +6,8 @@ Track your time spent in a Vscode! Works globally across all projects and window
 
 Shows time in hh:mm:ss format at the right bottom of the window
 
+![Image](https://github.com/h0pped/time-tracker-vsix/blob/main/images/statusBar.png?raw=true)
+
 ## Requirements
 
 No requirements at all.
