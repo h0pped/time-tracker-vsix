@@ -4,9 +4,17 @@ Track your time spent in a Vscode! Works globally across all projects and window
 
 ## Features
 
-Shows time in hh:mm:ss format at the right bottom of the window
+- Tracks time in hh:mm:ss format at the right bottom of the window
 
 ![Image](https://github.com/h0pped/time-tracker-vsix/blob/main/images/statusBar.png?raw=true)
+
+## To be added
+
+- Reset timer
+
+- Show timer for the current workspace
+
+- Time spent on specific file/folder
 
 ## Requirements
 
